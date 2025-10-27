@@ -24,7 +24,7 @@ public class Booking {
             stmt.setDate(2, new java.sql.Date(booking_date.getTime()));
             stmt.setInt(3, slot);
             ResultSet rs = stmt.executeQuery();
-            return !rs.next();  // If no results, the slot is available
+            return !rs.next(); 
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -78,3 +78,4 @@ public class Booking {
     }
 
 }
+
